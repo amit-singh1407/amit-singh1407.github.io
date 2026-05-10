@@ -2,8 +2,8 @@ const Education = () => {
   const education = [
     {
       degree: "MCA in Data Science & AI",
-      institution: "Your University Name",
-      period: "2024 — 2026 (Expected)",
+      institution: "Babu Banarasi Das Unversity",
+      period: "2025 — 2027 (Expected)",
       status: "Executing...",
       details: "Advanced studies in Neural Networks, Big Data Analytics, and AI Ethics."
     },
@@ -20,7 +20,7 @@ const Education = () => {
     <section id="education" className="py-20 bg-[#0d1117] font-mono">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-2xl text-white mb-12 flex items-center">
-          <span className="text-blue-400 mr-2">system</span> get_education_history()
+          <span className="text-blue-400 mr-2">def</span> get_education_history()
         </h2>
 
         <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-800 before:to-transparent">

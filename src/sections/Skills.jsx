@@ -1,43 +1,81 @@
 import { 
   SiPython, SiPandas, SiNumpy, SiScikitlearn, 
-  SiFlask, SiPlotly, SiPostgresql 
+  SiFlask, SiPlotly, SiPostgresql, 
+  SiMongodb,
+  SiFastapi,
+  SiHtml5,
+  SiCss,
+  SiMysql
 } from 'react-icons/si';
-import { IoLogoTableau } from "react-icons/io5";
+import { IoLogoTableau, IoBarChart } from "react-icons/io5";
+import { FcScatterPlot } from "react-icons/fc";
+import { FaGitAlt , FaGithub } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Core Languages",
+      title: "Programming Languages",
       skills: [
-        { name: "Python", icon: <SiPython className="text-yellow-400" />, level: "95%" },
-        { name: "SQL", icon: <SiPostgresql className="text-blue-400" />, level: "85%" },
+        { name: "Python", icon: <SiPython className="text-yellow-400" /> },
+        { name: "SQL", icon: <SiPostgresql className="text-blue-400" /> },
+      ],
+    },
+        {
+      title: "Web & Backend Development",
+      skills: [
+        { name: "Flask", icon: <SiFlask className="text-yellow-400" /> },
+        { name: "FastAPI", icon: <SiFastapi className="text-blue-400" /> },
+        { name: "HTML", icon: <SiHtml5 className="text-blue-400" /> },
+        { name: "CSS", icon: <SiCss className="text-blue-400" /> },
       ],
     },
     {
-      title: "Data Science Stack",
+      title: "Database",
       skills: [
-        { name: "Pandas", icon: <SiPandas className="text-indigo-400" />, level: "90%" },
-        { name: "NumPy", icon: <SiNumpy className="text-blue-500" />, level: "85%" },
-        { name: "Scikit-Learn", icon: <SiScikitlearn className="text-orange-400" />, level: "80%" },
+        { name: "MongoDB", icon: <SiMongodb className="text-indigo-400" /> },
+        { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
+    
       ],
     },
     {
-      title: "Visualization & Web",
+      title: "AI/Machine Learning",
       skills: [
-        { name: "Tableau", icon: <IoLogoTableau className="text-blue-600" />, level: "85%" },
-        { name: "Seaborn", icon: <SiPlotly className="text-green-400" />, level: "80%" },
-        { name: "Flask", icon: <SiFlask className="text-white" />, level: "75%" },
+        { name: "Pandas", icon: <SiPandas className="text-blue-600" /> },
+        { name: "Numpy", icon: <SiNumpy className="text-green-400" />},
+        { name: "Scikit-learn", icon: <SiScikitlearn className="text-white" />},
+        { name: "Flask", icon: <SiFlask className="text-white" />},
+
+      ],
+    },
+    {
+      title: "Data Visulization",
+      skills: [
+        { name: "Matplotlib", icon: <SiPlotly className="text-blue-600" /> },
+        { name: "Seaborn", icon: <FcScatterPlot className="text-green-400" /> },
+        { name: "Power BI", icon: <IoBarChart className="text-yellow-300" /> },
+        { name: "Tableau", icon: <IoLogoTableau className="text-purple-200" />},
+
+      ],
+    },
+    {
+      title: "Tools & Platforms",
+      skills: [
+        { name: "Git", icon: <FaGitAlt className="text-red-600" /> },
+        { name: "Github", icon: <FaGithub className="text-black-400" />},
+        { name: "VS Code", icon: <VscVscode className="text-blue-600" />},
       ],
     },
   ];
 
   return (
-    <section id="skills" className="py-20 bg-[#0d1117] font-mono">
+    <section id="skills" className="py-20 font-mono">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-16">
           <h2 className="text-2xl text-blue-400 flex items-center gap-2">
-            <span className="text-green-500">import</span> skills_matrix as sm
+            <span className="text-green-500">import</span>skills_matrix as sm
           </h2>
         </div>
 

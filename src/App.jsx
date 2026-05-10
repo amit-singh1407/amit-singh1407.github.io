@@ -9,7 +9,6 @@ import Hero from './sections/Hero'
 import Navbar from './sections/Navbar'
 import Projects from './sections/Projects'
 import Skills from './sections/Skills'
-import Skillss from './sections/Skillss'
 
 function App() {
 
@@ -32,7 +31,6 @@ function App() {
         
         {/* I removed 'Skillss' and kept 'Skills' (the new layout we discussed) */}
         <Skills />
-        <Skillss />
         
         <Projects />
         <Certifications />
