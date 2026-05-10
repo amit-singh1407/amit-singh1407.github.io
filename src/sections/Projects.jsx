@@ -1,4 +1,5 @@
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
+import zomatoImg from '../assets/zomato-data-analysis.png';
 
 const Projects = () => {
   const projects = [
@@ -8,7 +9,7 @@ const Projects = () => {
       description: "Comprehensive analysis of Zomato restaurant data to derive business insights and patterns. Includes customer behavior analysis, price optimization recommendations, and market trend predictions.",
       tech: ["Python", "Pandas", "Matplotlib", "Seaborn"],
       metric: "92% Accuracy",
-      image: "src/assets/zomato-data-analysis.png",
+      image: zomatoImg,
       githubLink: "#",
       liveLink : "#"
     },
