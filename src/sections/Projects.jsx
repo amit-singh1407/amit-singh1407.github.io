@@ -1,5 +1,7 @@
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import zomatoImg from '../assets/zomato-data-analysis.png';
+import wasteImg from '../assets/waste-classification.png';
+import airbnbImg from '../assets/airbnb.png';
 
 const Projects = () => {
   const projects = [
@@ -7,21 +9,37 @@ const Projects = () => {
       id: 1,
       title: "Zomato Data Analysis",
       description: "Comprehensive analysis of Zomato restaurant data to derive business insights and patterns. Includes customer behavior analysis, price optimization recommendations, and market trend predictions.",
-      tech: ["Python", "Pandas", "Matplotlib", "Seaborn"],
+      tech: ["Python | Pandas | Matplotlib | Seaborn"],
       metric: "92% Accuracy",
       image: zomatoImg,
-      githubLink: "#",
-      liveLink : "#"
+      githubLink: "https://github.com/amit-singh1407/zomato-analytics-dashboard.git",
+      liveLink : "https://amit-singh1407.github.io/zomato-analytics-dashboard/"
     },
     {
       id: 2,
-      title: "Inventory Flask API",
-      description: "Restful API for real-time inventory tracking. Integrated with a PostgreSQL database to manage supply chain data.",
-      tech: ["Flask", "PostgreSQL", "psycopg2"],
-      metric: "Latency < 50ms",
-      image: "https://placehold.co/600x400/161b22/white?text=API+Documentation+UI",
-      githubLink: "#",
-      liveLink : "#"
+      title: "Waste Management System",
+      description: "AI-powered Smart Waste Classification System that automatically detects and sorts waste into biodegradable, recyclable, and non-recyclable categories using computer vision and machine learning.",
+      tech: ["Python | OpenCV | gradio | ultralytics/yolov8 | pillow"],
+      metric: "Improved Efficiency by 80%",
+      image: wasteImg,
+
+      githubLink: "https://github.com/amit-singh1407/Waste-Classification-Project",
+      // liveLink : "https://github.com/amit-singh1407/Waste-Classification-Project"
+    },
+    {
+      id: 3,
+      title: "Airbnb Data Analysis",
+      description: "A full-stack Airbnb Analytics Dashboard built using React.js, Tailwind CSS, Recharts, Flask, Pandas, and NumPy. The project analyzes real Airbnb dataset records and presents interactive charts, pricing insights, room-type distributions, neighborhood trends, and availability analytics through a modern responsive dashboard UI with REST API integration.",
+      tech: [
+        "Frontend: React, Tailwind CSS, Recharts, Axios, JavaScript (ES6+), HTML5, CSS3\n" +
+        "Backend: Flask, Pandas, NumPy, Flask-CORS, REST API Architecture\n" +
+        "Data Viz: Recharts, Interactive Dashboards, KPI Analytics"
+      ],
+      metric: "92% Accuracy",
+      image: airbnbImg,
+
+      githubLink: "https://github.com/amit-singh1407/Airbnb-Analytics-Dashboard",
+      liveLink : "https://amit-singh1407.github.io/Airbnb-Analytics-Dashboard/"
     }
   ];
 
@@ -70,10 +88,10 @@ const Projects = () => {
                           <div className="text-2xl font-bold text-blue-400">{proj.metric}</div>
                         </div>
                         <div className="flex gap-4 mt-6">
-                          <a href={proj.link} className="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors">
+                          <a href={proj.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors">
                             <FiGithub /> Source Code
                           </a>
-                          <a href={proj.link} className="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors">
+                          <a href={proj.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors">
                             <FiExternalLink /> Live Demo
                           </a>
                         </div>

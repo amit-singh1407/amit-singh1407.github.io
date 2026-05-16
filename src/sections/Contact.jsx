@@ -5,14 +5,13 @@ import { IoCallOutline } from "react-icons/io5";
 
 const Contact = () => {
   const socialLinks = [
-    { name: 'GitHub', icon: <FiGithub />, url: 'https://github.com/yourbrother', color: 'hover:text-white' },
-    { name: 'LinkedIn', icon: <FiLinkedin />, url: 'https://linkedin.com/in/yourbrother', color: 'hover:text-blue-500' },
-    { name: 'Email', icon: <FiMail />, url: 'mailto:hello@example.com', color: 'hover:text-red-400' },
-    { name: 'Instagram', icon: <FaSquareInstagram />, url: 'https://instagram.com/yourbrother', color: 'hover:text-pink-500' },
-    { name: 'Location', icon: <IoLocationOutline />, url: 'https://www.google.com/maps/place/Your+City', color: 'hover:text-green-400' },
-    { name: 'Phone', icon: <IoCallOutline />, url: 'tel:+1234567890', color: 'hover:text-yellow-400' },
+    { name: 'GitHub', icon: <FiGithub />, url: 'https://github.com/amit-singh1407', color: 'hover:text-white' },
+    { name: 'LinkedIn', icon: <FiLinkedin />, url: 'https://www.linkedin.com/in/amitsingh1407/', color: 'hover:text-blue-500' },
+    { name: 'Email', icon: <FiMail />, url: 'mailto:kumaramit.14singh@gmail.com', color: 'hover:text-red-400' },
+    // { name: 'Instagram', icon: <FaSquareInstagram />, url: 'https://instagram.com/yourbrother', color: 'hover:text-pink-500' },
+    { name: 'Location', icon: <IoLocationOutline />, url: 'https://maps.app.goo.gl/chF1fJ21Tv48yYTE8, Lucknow India', color: 'hover:text-green-400' },
+    { name: 'Phone', icon: <IoCallOutline />, url: 'tel:9129187074', color: 'hover:text-yellow-400' },
   ];
-
   return (
     <section id="contact" className="py-20 bg-[#0d1117] font-mono">
       <div className="max-w-4xl mx-auto px-6 text-center">
@@ -64,7 +63,7 @@ const Contact = () => {
             /* <br />
             &nbsp;* Built with React, Tailwind v4 & Coffee <br />
             &nbsp;* Designed for Data Science Engineers <br />
-            &nbsp;* © {new Date().getFullYear()} Your Brother's Name <br />
+            &nbsp;* © {new Date().getFullYear()} Amit Singh <br />
             &nbsp;*/
           </p>
         </div>

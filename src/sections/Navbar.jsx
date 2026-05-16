@@ -65,7 +65,13 @@ const Navbar = () => {
               </a>
             ))}
             <div className="p-3">
-               <button className="w-full text-left text-xs text-green-500 opacity-50">
+               <button 
+                 onClick={() => {
+                   setIsOpen(false);
+                   window.location.href = '#contact';
+                 }}
+                 className="w-full text-left text-xs text-green-500 opacity-50 hover:opacity-100 transition-opacity"
+               >
                  $ run --contact-me
                </button>
             </div>
