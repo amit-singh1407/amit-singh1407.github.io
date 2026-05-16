@@ -3,11 +3,11 @@ import { HiOutlineBadgeCheck } from 'react-icons/hi';
 const Certifications = () => {
   const certs = [
     { name: "Power BI Course", issuer: "Intellipaat", date: "June 2025", tags: ["Visualization", "BI"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
-    { name: "SQL Course", issuer: "Intellipaat", date: "June 2025", tags: ["Database", "Queries"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
-    { name: "Introduction to Cloud", issuer: "IBM SkillsBuild", date: "April 2024", tags: ["Cloud", "IBM Cloud"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
-    { name: "Python for Data Science", issuer: "Digipodium", date: "March 2024", tags: ["Python", "DS"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
-    { name: "Predictive Modeling Fundamentals I", issuer: "Cognitive Class", date: "Nov 2023", tags: ["ML", "Analytics"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
-    { name: "Introduction to Data Concepts", issuer: "IBM SkillsBuild", date: "April 2023", tags: ["Big Data", "Analysis"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
+    { name: "SQL Course", issuer: "Intellipaat", date: "June 2025", tags: ["Database", "Queries"], viewLink: "https://drive.google.com/file/d/1EkO6eMShLPO7Zbgq2vDWB07tR14FyBIb/view?usp=sharing" },
+    { name: "Introduction to Cloud", issuer: "IBM SkillsBuild", date: "April 2024", tags: ["Cloud", "IBM Cloud"], viewLink: "https://drive.google.com/file/d/1mqkrYHshs1K4xsT8pVZNXXx7vpRpmI-H/view?usp=sharing" },
+    { name: "Python for Data Science", issuer: "Digipodium", date: "March 2024", tags: ["Python", "DS"], viewLink: "https://drive.google.com/file/d/1e8zUDyL89PVR82ibjr-Y0FAASiw5Jtwp/view?usp=sharing" },
+    { name: "Predictive Modeling Fundamentals I", issuer: "Cognitive Class", date: "Nov 2023", tags: ["ML", "Analytics"], viewLink: "https://drive.google.com/file/d/1VmxJTYDjT8TN_p56Rg8ovR4cDrpPZ6pr/view?usp=sharing" },
+    { name: "Introduction to Data Concepts", issuer: "IBM SkillsBuild", date: "April 2023", tags: ["Big Data", "Analysis"], viewLink: "https://drive.google.com/file/d/1fZ46mxSuYsnnpWr_yPZUV2OxsAfDi-Sd/view?usp=sharing" },
   ];
 
   return (
