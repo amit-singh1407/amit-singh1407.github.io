@@ -2,12 +2,12 @@ import { HiOutlineBadgeCheck } from 'react-icons/hi';
 
 const Certifications = () => {
   const certs = [
-    { name: "Power BI Course", issuer: "Intellipaat", date: "June 2025", tags: ["Visualization", "BI"] },
-    { name: "SQL Course", issuer: "Intellipaat", date: "June 2025", tags: ["Database", "Queries"] },
-    { name: "Introduction to Cloud", issuer: "IBM SkillsBuild", date: "April 2024", tags: ["Cloud", "IBM Cloud"] },
-    { name: "Python for Data Science", issuer: "Digipodium", date: "March 2024", tags: ["Python", "DS"] },
-    { name: "Predictive Modeling Fundamentals I", issuer: "Cognitive Class", date: "Nov 2023", tags: ["ML", "Analytics"] },
-    { name: "Introduction to Data Concepts", issuer: "IBM SkillsBuild", date: "April 2023", tags: ["Big Data", "Analysis"] },
+    { name: "Power BI Course", issuer: "Intellipaat", date: "June 2025", tags: ["Visualization", "BI"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
+    { name: "SQL Course", issuer: "Intellipaat", date: "June 2025", tags: ["Database", "Queries"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
+    { name: "Introduction to Cloud", issuer: "IBM SkillsBuild", date: "April 2024", tags: ["Cloud", "IBM Cloud"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
+    { name: "Python for Data Science", issuer: "Digipodium", date: "March 2024", tags: ["Python", "DS"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
+    { name: "Predictive Modeling Fundamentals I", issuer: "Cognitive Class", date: "Nov 2023", tags: ["ML", "Analytics"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
+    { name: "Introduction to Data Concepts", issuer: "IBM SkillsBuild", date: "April 2023", tags: ["Big Data", "Analysis"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
   ];
 
   return (
@@ -41,6 +41,9 @@ const Certifications = () => {
                     </span>
                   ))}
                 </div>
+                <a href={cert.viewLink} target="_blank" className="mt-4 inline-block text-xs text-gray-300 hover:text-blue-300 transition-colors font-medium" rel="noopener noreferrer">
+                  View Certificate
+                </a>
               </div>
             </div>
           ))}

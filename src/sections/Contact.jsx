@@ -1,5 +1,4 @@
-import { FiGithub, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi';
-import { FaSquareInstagram } from "react-icons/fa6";
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import { IoLocationOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 
@@ -8,8 +7,7 @@ const Contact = () => {
     { name: 'GitHub', icon: <FiGithub />, url: 'https://github.com/amit-singh1407', color: 'hover:text-white' },
     { name: 'LinkedIn', icon: <FiLinkedin />, url: 'https://www.linkedin.com/in/amitsingh1407/', color: 'hover:text-blue-500' },
     { name: 'Email', icon: <FiMail />, url: 'mailto:kumaramit.14singh@gmail.com', color: 'hover:text-red-400' },
-    // { name: 'Instagram', icon: <FaSquareInstagram />, url: 'https://instagram.com/yourbrother', color: 'hover:text-pink-500' },
-    { name: 'Location', icon: <IoLocationOutline />, url: 'https://maps.app.goo.gl/chF1fJ21Tv48yYTE8, Lucknow India', color: 'hover:text-green-400' },
+    { name: 'Location', icon: <IoLocationOutline />, url: 'https://maps.app.goo.gl/cTJmaP6gpBMpuw7W6, Lucknow India', color: 'hover:text-green-400' },
     { name: 'Phone', icon: <IoCallOutline />, url: 'tel:9129187074', color: 'hover:text-yellow-400' },
   ];
   return (
