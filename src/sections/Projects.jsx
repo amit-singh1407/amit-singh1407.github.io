@@ -23,8 +23,8 @@ const Projects = () => {
       metric: "Improved Efficiency by 80%",
       image: wasteImg,
 
-      githubLink: "https://github.com/amit-singh1407/waste_classification.git",
-      liveLink :  "https://huggingface.co/spaces/Amit1407/waste-classification" 
+      githubLink: "https://github.com/amit-singh1407/waste_classification",
+      liveLink:  "https://github.com/amit-singh1407/waste_classification" 
     },
     {
       id: 3,
