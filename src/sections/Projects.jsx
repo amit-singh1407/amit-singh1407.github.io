@@ -2,6 +2,7 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import zomatoImg from '../assets/zomato-data-analysis.png';
 import wasteImg from '../assets/waste-classification.png';
 import airbnbImg from '../assets/airbnb.png';
+import coffeeImg from '../assets/coffee.png';
 
 const Projects = () => {
   const projects = [
@@ -40,6 +41,21 @@ const Projects = () => {
 
       githubLink: "https://github.com/amit-singh1407/Airbnb-Analytics-Dashboard",
       liveLink : "https://amit-singh1407.github.io/Airbnb-Analytics-Dashboard/"
+    },
+    {
+      id: 4,
+      title: "Coffee Shop Data Analysis",
+      description: "A full-stack Coffee Shop Analytics Dashboard built using React.js, Tailwind CSS, Recharts, Flask, Pandas, and NumPy. The project analyzes real Coffee Shop dataset records and presents interactive charts, pricing insights, menu-item performance, customer behavior, and sales trends through a modern responsive dashboard UI with REST API integration.",
+      tech: [
+        "Frontend: React, Tailwind CSS, Recharts, Axios, JavaScript (ES6+), HTML5, CSS3\n" +
+        "Backend: Flask, Pandas, NumPy, Flask-CORS, REST API Architecture\n" +
+        "Data Viz: Recharts, Interactive Dashboards, KPI Analytics"
+      ],
+      metric: "92% Accuracy",
+      image: coffeeImg,
+
+      githubLink: "https://github.com/amit-singh1407/Coffee-Shop-Sales-Intelligence-Dashboard.git",
+      liveLink : "https://amit-singh1407.github.io/Coffee-Shop-Sales-Intelligence-Dashboard/"
     }
   ];
 
