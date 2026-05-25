@@ -25,7 +25,7 @@ const Projects = () => {
       image: wasteImg,
 
       githubLink: "https://github.com/amit-singh1407/waste_classification",
-      liveLink:  "https://github.com/amit-singh1407/waste_classification" 
+      liveLink:  "https://amit1407-waste-classification.hf.space/" 
     },
     {
       id: 3,
