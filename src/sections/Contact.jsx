@@ -39,7 +39,7 @@ const Contact = () => {
             <span className="text-green-400"> Machine Learning</span>.
           </p>
 
-          <div className="flex justify-center gap-8 md:gap-12">
+          <div className="flex justify-center gap-4 md:gap-14">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
@@ -48,7 +48,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className={`flex flex-col items-center gap-2 text-gray-500 transition-all duration-300 transform hover:-translate-y-2 ${link.color}`}
               >
-                <span className="text-3xl">{link.icon}</span>
+                <span className="text-lg sm:text-3xl">{link.icon}</span>
                 <span className="text-[10px] uppercase tracking-widest">{link.name}</span>
               </a>
             ))}

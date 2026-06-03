@@ -1,7 +1,7 @@
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import zomatoImg from '../assets/zomato-data-analysis.png';
 import wasteImg from '../assets/waste-classification.png';
-import airbnbImg from '../assets/airbnb.png';
+import airbnbImg from '../assets/Airbnb.png';
 import coffeeImg from '../assets/coffee.png';
 
 const Projects = () => {
@@ -32,9 +32,9 @@ const Projects = () => {
       title: "Airbnb Data Analysis",
       description: "A full-stack Airbnb Analytics Dashboard built using React.js, Tailwind CSS, Recharts, Flask, Pandas, and NumPy. The project analyzes real Airbnb dataset records and presents interactive charts, pricing insights, room-type distributions, neighborhood trends, and availability analytics through a modern responsive dashboard UI with REST API integration.",
       tech: [
-        "Frontend: React, Tailwind CSS, Recharts, Axios, JavaScript (ES6+), HTML5, CSS3\n" +
-        "Backend: Flask, Pandas, NumPy, Flask-CORS, REST API Architecture\n" +
-        "Data Viz: Recharts, Interactive Dashboards, KPI Analytics"
+        "Frontend: React | Tailwind CSS | Axios\n" +
+        "Backend: Flask | Pandas | NumPy | REST API\n" +
+        "Data Viz: Recharts"
       ],
       metric: "92% Accuracy",
       image: airbnbImg,
@@ -62,7 +62,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-[#0d1117] font-mono">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl text-white mb-12 flex items-center">
+        <h2 className="text-xl sm:text-2xl text-white mb-12 flex items-center">
           <span className="text-blue-400 mr-2">class</span> PortfolioProjects:
         </h2>
 
@@ -70,33 +70,33 @@ const Projects = () => {
           {projects.map((proj) => (
             <div key={proj.id} className="group relative">
               {/* Notebook Sidebar Line */}
-              <div className="absolute left-[-20px] top-0 bottom-0 w-1 bg-gray-800 group-hover:bg-blue-500 transition-colors"></div>
+              <div className="absolute left-5 top-0 bottom-0 hidden sm:block w-1 bg-gray-800 group-hover:bg-blue-500 transition-colors"></div>
 
               {/* Input Cell (The Tech) */}
-              <div className="flex items-start gap-4 mb-2">
+              <div className="flex flex-col sm:flex-row items-start gap-4 mb-2">
                 <span className="text-blue-500 font-bold whitespace-nowrap text-sm">In [{proj.id}]:</span>
-                <div className="flex-1 bg-[#161b22] border border-gray-800 rounded-lg p-4">
+                <div className="flex-1 min-w-0 bg-[#161b22] border border-gray-800 rounded-lg p-4">
                   <h3 className="text-xl font-bold text-white mb-2 underline decoration-blue-500/30">
                     {proj.title}
                   </h3>
-                  <pre className="text-xs md:text-sm text-green-400 overflow-x-auto">
+                  <pre className="text-xs md:text-sm text-green-400 overflow-x-auto whitespace-pre-wrap wrap-break-words">
                     <code>{proj.tech}</code>
                   </pre>
-                  <p className="text-gray-400 mt-4 text-sm leading-relaxed">
+                  <p className="text-gray-400 mt-4 text-sm leading-relaxed wrap-break-words">
                     {proj.description}
                   </p>
                 </div>
               </div>
 
               {/* Output Cell (The Result) */}
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col sm:flex-row items-start gap-4">
                 <span className="text-red-400 font-bold whitespace-nowrap text-sm">Out [{proj.id}]:</span>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-black/30 border border-gray-800 rounded-lg overflow-hidden p-2">
                       <img 
                         src={proj.image} 
                         alt={proj.title} 
-                        className="rounded border border-gray-800 grayscale hover:grayscale-0 transition-all duration-500"
+                        className="w-full rounded border border-gray-800 grayscale hover:grayscale-0 transition-all duration-500"
                       />
                       <div className="p-4 flex flex-col justify-between">
                         <div>
