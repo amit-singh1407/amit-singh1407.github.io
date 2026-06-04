@@ -47,9 +47,9 @@ const Projects = () => {
       title: "Coffee Shop Data Analysis",
       description: "A full-stack Coffee Shop Analytics Dashboard built using React.js, Tailwind CSS, Recharts, Flask, Pandas, and NumPy. The project analyzes real Coffee Shop dataset records and presents interactive charts, pricing insights, menu-item performance, customer behavior, and sales trends through a modern responsive dashboard UI with REST API integration.",
       tech: [
-        "Frontend: React, Tailwind CSS, Recharts, Axios, JavaScript (ES6+), HTML5, CSS3\n" +
-        "Backend: Flask, Pandas, NumPy, Flask-CORS, REST API Architecture\n" +
-        "Data Viz: Recharts, Interactive Dashboards, KPI Analytics"
+        "Frontend: React | Tailwind CSS | Axios\n" +
+        "Backend: Flask | Pandas | NumPy | REST API\n" +
+        "Data Viz: Recharts"
       ],
       metric: "92% Accuracy",
       image: coffeeImg,

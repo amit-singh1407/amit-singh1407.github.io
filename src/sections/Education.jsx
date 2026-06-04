@@ -19,7 +19,7 @@ const Education = () => {
   return (
     <section id="education" className="py-20 bg-[#0d1117] font-mono">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl text-white mb-12 flex items-center">
+        <h2 className="text-xl md:text-2xl text-white mb-10 md:mb-12 flex flex-wrap items-center">
           <span className="text-blue-400 mr-2">def</span> get_education_history()
         </h2>
 
@@ -32,16 +32,16 @@ const Education = () => {
               </div>
 
               {/* Content Card */}
-              <div className="w-[calc(100%-4rem)] md:w-[45%] bg-[#161b22] p-6 rounded-xl border border-gray-800 shadow-xl">
-                <div className="flex items-center justify-between mb-2">
-                  <time className="text-xs text-blue-400 font-bold uppercase">{edu.period}</time>
-                  <span className={`text-[10px] px-2 py-0.5 rounded border ${edu.status === 'Completed' ? 'border-green-500/50 text-green-500' : 'border-yellow-500/50 text-yellow-500'}`}>
+              <div className="w-[calc(100%-3.5rem)] md:w-[45%] bg-[#161b22] p-4 md:p-6 rounded-xl border border-gray-800 shadow-xl">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                  <time className="text-xs text-blue-400 font-bold uppercase w-full sm:w-auto">{edu.period}</time>
+                  <span className={`text-[10px] px-2 py-0.5 rounded border whitespace-nowrap ${edu.status === 'Completed' ? 'border-green-500/50 text-green-500' : 'border-yellow-500/50 text-yellow-500'}`}>
                     {edu.status}
                   </span>
                 </div>
-                <h3 className="text-white font-bold text-lg leading-tight">{edu.degree}</h3>
+                <h3 className="text-white font-bold text-base md:text-lg leading-tight mt-1">{edu.degree}</h3>
                 <p className="text-gray-400 text-sm mt-1">{edu.institution}</p>
-                <p className="text-gray-500 text-xs mt-4 italic">{edu.details}</p>
+                <p className="text-gray-500 text-xs mt-3 italic">{edu.details}</p>
               </div>
             </div>
           ))}

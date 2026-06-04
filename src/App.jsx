@@ -14,7 +14,7 @@ function App() {
 
   return (
     /* 1. This is the Base Layer: It holds the background color and covers the whole screen */
-    <div className="relative min-h-screen bg-[#0d1117]">
+    <div className="relative min-h-screen bg-[#0d1117] overflow-x-hidden">
       
       {/* 2. The Mid Layer: Particles sit on top of the color but have -z-10 to stay behind text */}
       <ParticlesBg />
