@@ -4,3 +4,115 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
+
+/* ─── Theme Variables ─────────────────────────────────────────── */
+:root,
+[data-theme="dark"] {
+  --bg-primary:    #0d1117;
+  --bg-secondary:  #161b22;
+  --bg-card:       #161b22;
+  --bg-card-alt:   rgba(0,0,0,0.3);
+  --bg-overlay:    rgba(0,0,0,0.5);
+  --bg-tag:        #111827;   /* gray-900 */
+  --text-primary:  #ffffff;
+  --text-secondary:#d1d5db;   /* gray-300 */
+  --text-muted:    #6b7280;   /* gray-500 */
+  --text-dimmed:   #4b5563;   /* gray-600 */
+  --border-color:  #1f2937;   /* gray-800 */
+  --border-subtle: #111827;   /* gray-900 */
+  --particle-color:#3b82f6;
+  --toggle-track:  #374151;
+  --toggle-thumb:  #facc15;
+}
+
+[data-theme="light"] {
+  --bg-primary:    #f0f4f8;
+  --bg-secondary:  #ffffff;
+  --bg-card:       #ffffff;
+  --bg-card-alt:   rgba(226,232,240,0.5);
+  --bg-overlay:    rgba(248,250,252,0.8);
+  --bg-tag:        #e2e8f0;
+  --text-primary:  #0f172a;
+  --text-secondary:#334155;   /* slate-700 */
+  --text-muted:    #64748b;   /* slate-500 */
+  --text-dimmed:   #94a3b8;   /* slate-400 */
+  --border-color:  #cbd5e1;   /* slate-300 */
+  --border-subtle: #e2e8f0;   /* slate-200 */
+  --particle-color:#6366f1;
+  --toggle-track:  #bfdbfe;
+  --toggle-thumb:  #1e40af;
+}
+
+/* ─── Global Smooth Transitions ──────────────────────────────── */
+*, *::before, *::after {
+  transition:
+    background-color 0.35s ease,
+    border-color     0.35s ease,
+    color            0.35s ease,
+    box-shadow       0.35s ease;
+}
+
+/* ─── Theme-driven overrides (replaces hardcoded Tailwind values) */
+/* Root page background */
+.theme-bg-primary   { background-color: var(--bg-primary) !important; }
+.theme-bg-secondary { background-color: var(--bg-secondary) !important; }
+.theme-bg-card      { background-color: var(--bg-card) !important; }
+.theme-bg-card-alt  { background-color: var(--bg-card-alt) !important; }
+.theme-bg-tag       { background-color: var(--bg-tag) !important; }
+.theme-text-primary { color: var(--text-primary) !important; }
+.theme-text-secondary { color: var(--text-secondary) !important; }
+.theme-text-muted   { color: var(--text-muted) !important; }
+.theme-text-dimmed  { color: var(--text-dimmed) !important; }
+.theme-border       { border-color: var(--border-color) !important; }
+.theme-border-subtle { border-color: var(--border-subtle) !important; }
+
+/* Override all hardcoded bg-[#0d1117] and bg-[#161b22] globally */
+[data-theme] .bg-\[#0d1117\] { background-color: var(--bg-primary) !important; }
+[data-theme] .bg-\[#161b22\] { background-color: var(--bg-card) !important; }
+[data-theme] .bg-\[#161b22\]\/50 { background-color: color-mix(in srgb, var(--bg-card) 50%, transparent) !important; }
+[data-theme] .border-gray-800 { border-color: var(--border-color) !important; }
+[data-theme] .border-gray-900 { border-color: var(--border-subtle) !important; }
+[data-theme] .text-gray-200   { color: var(--text-primary) !important; }
+[data-theme] .text-gray-300   { color: var(--text-secondary) !important; }
+[data-theme] .text-gray-400   { color: var(--text-muted) !important; }
+[data-theme] .text-gray-500   { color: var(--text-muted) !important; }
+[data-theme] .text-gray-600   { color: var(--text-dimmed) !important; }
+[data-theme] .text-white      { color: var(--text-primary) !important; }
+[data-theme] .bg-black\/30    { background-color: var(--bg-card-alt) !important; }
+[data-theme] .bg-black\/50    { background-color: var(--bg-overlay) !important; }
+[data-theme] .bg-gray-900     { background-color: var(--bg-tag) !important; }
+[data-theme] .border-gray-700 { border-color: var(--border-color) !important; }
+
+/* ─── Toggle Button ───────────────────────────────────────────── */
+.theme-toggle {
+  position: relative;
+  width: 56px;
+  height: 28px;
+  border-radius: 9999px;
+  background-color: var(--toggle-track);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+/* ─── Keyframes for ThemeToggle ───────────────────────────────── */
+@keyframes spin-rays {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1;   transform: scale(1);   }
+  50%       { opacity: 0.2; transform: scale(0.5); }
+}
+
+@keyframes moon-glow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(226,232,240,0.7)); }
+  50%       { filter: drop-shadow(0 0 7px rgba(226,232,240,1));   }
+}
+
+@keyframes cloud-drift {
+  0%, 100% { transform: translateX(0);   }
+  50%       { transform: translateX(2px); }
+}

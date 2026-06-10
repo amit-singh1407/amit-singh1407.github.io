@@ -18,8 +18,8 @@ const About = () => {
             <div className="absolute -inset-1 bg-linear-to-r from-blue-500 to-green-500 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <div className="relative aspect-square bg-[#161b22] border border-gray-700 rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/amit-singh.jpg"
-                alt="Profile"
+                src={`${import.meta.env.BASE_URL}amit-singh.jpg`}
+                alt="Amit Kumar Singh"
                 className="w-full h-full object-cover"
               />
             </div>
