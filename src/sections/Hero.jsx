@@ -74,16 +74,16 @@ const Hero = () => {
               </a>
             </p>
 
-            <p>
+            {/* <p>
               <span className="text-green-500">➜</span>
               <span className="text-blue-400 ml-2">sudo</span>
-              <button 
-                onClick={() => window.location.href = 'mailto:kumaramit.14singh@gmail.com'}
+              <a 
+                href="mailto:kumaramit.14singh@gmail.com"
                 className="text-white ml-2 underline decoration-green-500 cursor-pointer hover:text-green-400 transition-colors"
               >
                 contact --me
-              </button>
-            </p>
+              </a>
+            </p> */}
           </div>
 
           {/* Pulsing Cursor */}

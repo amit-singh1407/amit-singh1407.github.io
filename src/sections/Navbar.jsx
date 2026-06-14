@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-[#0d1117] border-b border-gray-800 font-mono">
+    <nav className="fixed w-full z-50 theme-bg-primary border-b theme-border font-mono">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
@@ -31,7 +31,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="px-4 py-2 rounded-t-md text-sm font-medium text-gray-400 hover:bg-[#161b22] hover:text-blue-400 transition-colors duration-200 border-b-2 border-transparent hover:border-blue-400"
+                  className="px-4 py-2 rounded-t-md text-sm font-medium theme-text-muted hover:theme-bg-secondary hover:text-blue-400 transition-colors duration-200 border-b-2 border-transparent hover:border-blue-400"
                 >
                   {link.name}
                 </a>
@@ -55,13 +55,13 @@ const Navbar = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-[#0d1117] border-b border-gray-800">
+        <div className="md:hidden theme-bg-primary border-b theme-border">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-blue-400 hover:bg-[#161b22]"
+                className="block px-3 py-2 rounded-md text-base font-medium theme-text-muted hover:text-blue-400 hover:theme-bg-secondary"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

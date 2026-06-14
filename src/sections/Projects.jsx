@@ -60,9 +60,9 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-[#0d1117] font-mono">
+    <section id="projects" className="py-20 theme-bg-primary font-mono">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-xl sm:text-2xl text-white mb-12 flex items-center">
+        <h2 className="text-xl sm:text-2xl theme-text-primary mb-12 flex items-center">
           <span className="text-blue-400 mr-2">class</span> PortfolioProjects:
         </h2>
 
@@ -70,19 +70,19 @@ const Projects = () => {
           {projects.map((proj) => (
             <div key={proj.id} className="group relative">
               {/* Notebook Sidebar Line */}
-              <div className="absolute left-5 top-0 bottom-0 hidden sm:block w-1 bg-gray-800 group-hover:bg-blue-500 transition-colors"></div>
+              <div className="absolute left-5 top-0 bottom-0 hidden sm:block w-1 theme-bg-tag group-hover:bg-blue-500 transition-colors"></div>
 
               {/* Input Cell (The Tech) */}
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-2">
                 <span className="text-blue-500 font-bold whitespace-nowrap text-sm">In [{proj.id}]:</span>
-                <div className="flex-1 min-w-0 bg-[#161b22] border border-gray-800 rounded-lg p-4">
-                  <h3 className="text-xl font-bold text-white mb-2 underline decoration-blue-500/30">
+                <div className="flex-1 min-w-0 theme-bg-card border theme-border rounded-lg p-4">
+                  <h3 className="text-xl font-bold theme-text-primary mb-2 underline decoration-blue-500/30">
                     {proj.title}
                   </h3>
                   <pre className="text-xs md:text-sm text-green-400 overflow-x-auto whitespace-pre-wrap wrap-break-words">
                     <code>{proj.tech}</code>
                   </pre>
-                  <p className="text-gray-400 mt-4 text-sm leading-relaxed wrap-break-words">
+                  <p className="theme-text-secondary mt-4 text-sm leading-relaxed wrap-break-words">
                     {proj.description}
                   </p>
                 </div>
@@ -92,22 +92,22 @@ const Projects = () => {
               <div className="flex flex-col sm:flex-row items-start gap-4">
                 <span className="text-red-400 font-bold whitespace-nowrap text-sm">Out [{proj.id}]:</span>
                 <div className="flex-1 min-w-0">
-                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-black/30 border border-gray-800 rounded-lg overflow-hidden p-2">
+                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 theme-bg-card-alt border theme-border rounded-lg overflow-hidden p-2">
                       <img 
                         src={proj.image} 
                         alt={proj.title} 
-                        className="w-full rounded border border-gray-800 grayscale hover:grayscale-0 transition-all duration-500"
+                        className="w-full rounded border theme-border grayscale hover:grayscale-0 transition-all duration-500"
                       />
                       <div className="p-4 flex flex-col justify-between">
                         <div>
-                          <span className="text-xs uppercase tracking-widest text-gray-500">Key Metric</span>
+                          <span className="text-xs uppercase tracking-widest theme-text-muted">Key Metric</span>
                           <div className="text-2xl font-bold text-blue-400">{proj.metric}</div>
                         </div>
                         <div className="flex gap-4 mt-6">
-                          <a href={proj.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors">
+                          <a href={proj.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs theme-text-secondary hover:theme-text-primary transition-colors">
                             <FiGithub /> Source Code
                           </a>
-                          <a href={proj.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors">
+                          <a href={proj.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs theme-text-secondary hover:theme-text-primary transition-colors">
                             <FiExternalLink /> Live Demo
                           </a>
                         </div>

@@ -67,9 +67,10 @@ html, body {
 .theme-border-subtle { border-color: var(--border-subtle) !important; }
 
 /* Override all hardcoded bg-[#0d1117] and bg-[#161b22] globally */
-[data-theme] .bg-\[#0d1117\] { background-color: var(--bg-primary) !important; }
-[data-theme] .bg-\[#161b22\] { background-color: var(--bg-card) !important; }
-[data-theme] .bg-\[#161b22\]\/50 { background-color: color-mix(in srgb, var(--bg-card) 50%, transparent) !important; }
+[data-theme] .bg-\[\#0d1117\] { background-color: var(--bg-primary) !important; }
+[data-theme] .bg-\[\#161b22\] { background-color: var(--bg-card) !important; }
+[data-theme] .bg-\[\#161b22\]\/50 { background-color: color-mix(in srgb, var(--bg-card) 50%, transparent) !important; }
+[data-theme] .bg-\[\#161b22\]\/80 { background-color: color-mix(in srgb, var(--bg-card) 80%, transparent) !important; }
 [data-theme] .border-gray-800 { border-color: var(--border-color) !important; }
 [data-theme] .border-gray-900 { border-color: var(--border-subtle) !important; }
 [data-theme] .text-gray-200   { color: var(--text-primary) !important; }

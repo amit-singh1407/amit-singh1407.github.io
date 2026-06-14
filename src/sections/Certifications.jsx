@@ -11,15 +11,15 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 bg-[#0d1117] font-mono border-t border-gray-900">
+    <section id="certifications" className="py-20 theme-bg-primary font-mono border-t theme-border-subtle">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl text-white mb-12 flex items-center">
+        <h2 className="text-2xl theme-text-primary mb-12 flex items-center">
           <span className="text-green-500 mr-2">ls</span> /certificates/verified
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certs.map((cert, idx) => (
-            <div key={idx} className="bg-[#161b22]/50 border border-gray-800 p-5 rounded-lg hover:bg-[#161b22] transition-all group relative overflow-hidden">
+            <div key={idx} className="theme-bg-card-alt border theme-border p-5 rounded-lg hover:theme-bg-card transition-all group relative overflow-hidden">
               {/* Verification Stamp Background */}
               <HiOutlineBadgeCheck className="absolute -right-4 -bottom-4 text-8xl text-blue-500/5 group-hover:text-blue-500/10 transition-colors" />
               
@@ -28,20 +28,20 @@ const Certifications = () => {
                   <div className="p-2 bg-blue-500/10 rounded-md text-blue-400">
                     <HiOutlineBadgeCheck className="text-xl" />
                   </div>
-                  <span className="text-[10px] text-gray-500">{cert.date}</span>
+                  <span className="text-[10px] theme-text-muted">{cert.date}</span>
                 </div>
                 
-                <h3 className="text-gray-200 font-bold mb-1 leading-tight group-hover:text-white">{cert.name}</h3>
-                <p className="text-gray-500 text-sm mb-4">{cert.issuer}</p>
+                <h3 className="theme-text-secondary font-bold mb-1 leading-tight group-hover:theme-text-primary">{cert.name}</h3>
+                <p className="theme-text-muted text-sm mb-4">{cert.issuer}</p>
                 
                 <div className="flex flex-wrap gap-2">
                   {cert.tags.map(tag => (
-                    <span key={tag} className="text-[9px] bg-gray-900 text-gray-400 px-2 py-0.5 rounded border border-gray-800">
+                    <span key={tag} className="text-[9px] theme-bg-tag theme-text-muted px-2 py-0.5 rounded border theme-border">
                       #{tag}
                     </span>
                   ))}
                 </div>
-                <a href={cert.viewLink} target="_blank" className="mt-4 inline-block text-xs text-gray-300 hover:text-blue-300 transition-colors font-medium" rel="noopener noreferrer">
+                <a href={cert.viewLink} target="_blank" className="mt-4 inline-block text-xs theme-text-secondary hover:text-blue-500 transition-colors font-medium" rel="noopener noreferrer">
                   View Certificate
                 </a>
               </div>

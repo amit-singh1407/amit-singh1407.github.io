@@ -17,7 +17,7 @@ function AppContent() {
   return (
     /* 1. Base Layer: holds background color, carries data-theme for CSS variable switching */
     <div
-      className="relative min-h-screen overflow-x-hidden bg-[#0d1117]"
+      className="relative min-h-screen overflow-x-hidden theme-bg-primary theme-text-secondary"
       data-theme={isDark ? 'dark' : 'light'}
     >
       {/* 2. Mid Layer: Particles sit behind text */}
