@@ -44,7 +44,7 @@ const Skills = () => {
         { name: "Pandas", icon: <SiPandas className="text-blue-600" />},
         { name: "Numpy", icon: <SiNumpy className="text-green-400" />},
         { name: "Scikit-learn", icon: <SiScikitlearn className="text-white" />},
-        { name: "ML Ops", icon: <SiFlask className="text-white" />},
+        // { name: "ML Ops", icon: <SiFlask className="text-white" />},
       ],
     },
     {
@@ -53,7 +53,7 @@ const Skills = () => {
         { name: "Matplotlib", icon: <SiPlotly className="text-blue-600" />},
         { name: "Seaborn", icon: <FcScatterPlot className="text-green-400" />},
         { name: "Power BI", icon: <IoBarChart className="text-yellow-300" />},
-        { name: "Tableau", icon: <IoLogoTableau className="text-purple-200" />},
+        // { name: "Tableau", icon: <IoLogoTableau className="text-purple-200" />},
       ],
     },
     {
