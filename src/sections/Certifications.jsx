@@ -2,6 +2,8 @@ import { HiOutlineBadgeCheck } from 'react-icons/hi';
 
 const Certifications = () => {
   const certs = [
+    { name: "QuizOff 2026: India's Biggest AI Quiz", issuer: "CampusCrew & Unstop", date: "July 2026", tags: ["AI", "Quiz", "Competition"], viewLink: "https://drive.google.com/file/d/1-wWuY3X2J6Cz9NSh2zFxB3OoO7jf4rB9/view?usp=sharing" },
+    { name: "National Data Science Olympiad", issuer: "SRMIST & Unstop", date: "June 2026", tags: ["Data Science", "Olympiad"], viewLink: "https://drive.google.com/file/d/14EE5b28-JuxksqUmfrTw7k6Gnkj5GJDo/view?usp=sharing" },
     { name: "Power BI Course", issuer: "Intellipaat", date: "June 2025", tags: ["Visualization", "BI"], viewLink: "https://drive.google.com/file/d/1upp0bKDOBOaJSUgqGOgd_ifZaIHgjB3L/view?usp=sharing" },
     { name: "SQL Course", issuer: "Intellipaat", date: "June 2025", tags: ["Database", "Queries"], viewLink: "https://drive.google.com/file/d/1EkO6eMShLPO7Zbgq2vDWB07tR14FyBIb/view?usp=sharing" },
     { name: "Introduction to Cloud", issuer: "IBM SkillsBuild", date: "April 2024", tags: ["Cloud", "IBM Cloud"], viewLink: "https://drive.google.com/file/d/1mqkrYHshs1K4xsT8pVZNXXx7vpRpmI-H/view?usp=sharing" },
