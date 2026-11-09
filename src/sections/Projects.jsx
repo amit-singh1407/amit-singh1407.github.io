@@ -3,6 +3,7 @@ import zomatoImg from '../assets/zomato-data-analysis.png';
 import wasteImg from '../assets/waste-classification.png';
 import airbnbImg from '../assets/Airbnb.png';
 import coffeeImg from '../assets/coffee.png';
+import campusImg from '../assets/Smart-Campus.png';
 
 const Projects = () => {
   const projects = [
@@ -55,7 +56,27 @@ const Projects = () => {
       image: coffeeImg,
 
       githubLink: "https://github.com/amit-singh1407/Coffee-Shop-Sales-Intelligence-Dashboard.git",
-      liveLink : "https://amit-singh1407.github.io/Coffee-Shop-Sales-Intelligence-Dashboard/"
+      liveLink : "https://amit-singh1407.github.io/Coffee-Shop-Sales-Intelligence-Dashboard/",
+    },
+     {
+      id: 5,
+      title: "Smart Campus Lost & Found",
+      description: "An AI-powered web application that helps students report, search, match, and recover lost and found items within a campus.",
+      tech: [
+        "Frontend: React.js | JavaScript | Tailwind CSS,\n" +
+        "Backend: Python | Flask\n" +
+        "Database: MongoDB Atlas\n"+
+        "Machine Learning: Scikit-learn | TF-IDF | Cosine Similarity\n"+
+        "Authentication: JWT | Argon2\n"+
+        "Image Storage: Cloudinary\n"+
+        "API Handling: Axios"
+      ],
+      
+      metric: "92% Accuracy",
+      image: campusImg,
+
+      githubLink: "https://github.com/amit-singh1407/smart-campus-lost-found.git",
+      liveLink : "https://smart-campus-6o72.onrender.com/"
     }
   ];
 
