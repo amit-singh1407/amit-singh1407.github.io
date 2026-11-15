@@ -65,7 +65,7 @@ const Hero = () => {
               <span className="text-blue-400 ml-2">view</span>
 
               <a
-                href="https://drive.google.com/uc?export=download&id=11styWrVOl39lNqbVVgDXnaZNvpqe0EVL"
+                href="https://drive.google.com/file/d/1iN4ogTL9AtrB6nNQyjogzRF8ABhYTRRB/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white ml-2 underline decoration-blue-500 cursor-pointer hover:text-blue-400 transition-colors"

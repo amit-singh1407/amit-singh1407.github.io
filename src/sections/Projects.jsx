@@ -71,7 +71,7 @@ const Projects = () => {
         "Image Storage: Cloudinary\n"+
         "API Handling: Axios"
       ],
-      
+
       metric: "92% Accuracy",
       image: campusImg,
 
